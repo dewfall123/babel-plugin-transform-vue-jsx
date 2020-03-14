@@ -2,3 +2,4 @@
 node_modules
 example/example.build.js
 dist
+*.babel.js

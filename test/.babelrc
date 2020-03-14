@@ -1,5 +1,4 @@
 {
   "presets": ["@babel/preset-env"],
-  "plugins": ["../index"],
-  "ignore": ["node_modules"]
+  "plugins": ["../src/index"]
 }

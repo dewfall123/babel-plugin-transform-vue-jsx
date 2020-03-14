@@ -1,12 +1,20 @@
 module.exports = {
+  mode: 'development',
   entry: './example.js',
   output: {
     path: __dirname,
-    filename: 'example.build.js'
+    filename: 'example.build.js',
+  },
+  devServer: {
+    port: '8080',
   },
   module: {
-    loaders: [
-      { test: /\.js$/, loader: 'babel', exclude: /node_modules/ }
-    ]
-  }
+    rules: [
+      {
+        test: /\.js$/,
+        use: 'babel-loader',
+        exclude: /node_modules/,
+      },
+    ],
+  },
 }
